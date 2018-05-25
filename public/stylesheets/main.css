@@ -1,0 +1,25 @@
+.thumbnail img {
+  width: 100%;
+}
+
+.thumbnail {
+  padding: 0;
+}
+
+#delete-form {
+  display: inline;
+}
+
+.form_page {
+  width: 30%;
+  margin: 20px auto;
+  border: 1px solid grey;
+  border-radius: 4px;
+  text-align: center;
+  width: 40%;
+  padding-bottom: 19px;
+}
+
+.buttons {
+  padding-left: 15px;
+}
