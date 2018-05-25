@@ -18,7 +18,7 @@ var commentRoutes    = require("./routes/comments"),
     indexRoutes      = require("./routes/index");
 
 // mongoose.connect("mongodb://localhost/yelp_camp_v13");
-const databaseUri = "mongodb://mark:3Bongsecs!@ds137246.mlab.com:37246/marksfirstdb";
+// const databaseUri = "mongodb://mark:3Bongsecs!@ds137246.mlab.com:37246/marksfirstdb";
 mongoose.connect(databaseUri, { useMongoClient: true })
       .then(() => console.log(`Database connected`))
       .catch(err => console.log("Database connection error: ${err.message}"));
