@@ -9,7 +9,7 @@ var express             = require('express'),
   LocalStrategy         = require('passport-local'),
   passport              = require('passport'),
   passportLocalMongoose = require('passport-local-mongoose'),
-  seedDB                = require("./seeds"),
+  // seedDB                = require("./seeds"),
   flash                 = require("connect-flash");
 
 //Requiring Routes
@@ -18,12 +18,12 @@ var commentRoutes    = require("./routes/comments"),
     indexRoutes      = require("./routes/index");
 
 // mongoose.connect("mongodb://localhost/yelp_camp_v13");
-const databaseUri = "mongodb://*PASSWORD*";
+const databaseUri = "mongodb://mark:3Bongsecs!@ds137246.mlab.com:37246/marksfirstdb";
 mongoose.connect(databaseUri, { useMongoClient: true })
       .then(() => console.log(`Database connected`))
       .catch(err => console.log("Database connection error: ${err.message}"));
 
-// mongoose.connect("mongodb:*Password*");
+// mongoose.connect("mongodb://mark:*Password*@ds137246.mlab.com:37246/marksfirstdb");
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static(__dirname + "/public"));
 app.set('view engine', 'ejs');
