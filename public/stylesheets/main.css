@@ -20,6 +20,15 @@
   padding-bottom: 19px;
 }
 
-.buttons {
+.form_page h1 {
+  padding-bottom: 4px;
+}
+
+.navbar-default {
   padding-left: 15px;
+  padding-right: 15px;
+}
+
+.photos {
+  padding-bottom: 15px;
 }
