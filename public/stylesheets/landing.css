@@ -11,6 +11,7 @@ body {
 
 #landing-header h1 {
   color: #fff;
+  font-size: 55px;
 }
 
 .slideshow {
@@ -47,7 +48,7 @@ body {
   animation-delay: 5s;
 }
 .slideshow li:nth-child(3) {
-  background-image: url(https://i.imgur.com/Uv0pYWL.jpg);
+  background-image: url(https://i.imgur.com/mCZSXpB.jpg);
   animation-delay: 10s;
 }
 .slideshow li:nth-child(4) {
@@ -55,7 +56,7 @@ body {
   animation-delay: 15s;
 }
 .slideshow li:nth-child(5) {
-  background-image: url(https://i.imgur.com/mCZSXpB.jpg);
+  background-image: url(https://i.imgur.com/Uv0pYWL.jpg);
   animation-delay: 20s;
 }
 
