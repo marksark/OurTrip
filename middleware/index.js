@@ -1,7 +1,7 @@
 // middleware goes here and link things properly
-var Campground = require("../models/campground");
-var Comment = require("../models/comment");
-var middlewareObj = {};
+const Campground = require("../models/campground");
+const Comment = require("../models/comment");
+let middlewareObj = {};
 
 middlewareObj.checkCampgroundOwnership = function(req, res, next){
   //check campground ownership
