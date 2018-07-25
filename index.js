@@ -19,7 +19,7 @@ const commentRoutes    = require("./routes/comments"),
 
 // mongoose.connect("mongodb://localhost/yelp_camp_v13");
 const databaseUri = "mongodb://mark:testing123@ds137246.mlab.com:37246/marksfirstdb";
-mongoose.connect(databaseUri, { useMongoClient: true })
+mongoose.connect(databaseUri, { useNewUrlParser: true })
       .then(() => console.log(`Database connected`))
       .catch(err => console.log("Database connection error: ${err.message}"));
 
@@ -30,9 +30,10 @@ app.set('view engine', 'ejs');
 app.use(methodOverride("_method"));
 app.use(flash());
 
-// seedDB(); //seed the data for DB
+//seed the data for DB while testing offline
+// seedDB();
 
-//Passport Config
+//Passport Configuration
 app.use(require("express-session")({
   secret: "Mark Sarkis",
   resave: false,
@@ -50,6 +51,7 @@ app.use(function(req,res,next){
   next();
 });
 
+//include routes
 app.use(indexRoutes);
 app.use("/campgrounds/:id/comments", commentRoutes);
 app.use("/campgrounds", campgroundRoutes);
