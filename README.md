@@ -2,7 +2,7 @@
 
 This project was created because my friends and I love camping together.
 
-This application is used to track where we want to go camping and who would like to join our trip.
+This application is used to track where we want to go camping and who is able to join our trip.
 
 I am the sole developer of this project.
 
