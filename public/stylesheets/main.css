@@ -19,6 +19,12 @@
   padding-bottom: 19px;
 }
 
+@media screen and max-width: @screen-xs-max {
+    .form_page {
+      width: 60%;
+    }
+ }
+
 .form_page h1 {
   padding-bottom: 4px;
   font-size: 55px;
