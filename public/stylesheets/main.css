@@ -11,7 +11,7 @@
 }
 
 .form_page {
-  width: 40%;
+  width: 50%;
   margin: 20px auto;
   border: 1px solid grey;
   border-radius: 4px;
@@ -19,11 +19,11 @@
   padding-bottom: 19px;
 }
 
-@media screen and max-width: @screen-xs-max {
+/* @media screen and max-width: @screen-xs-max {
     .form_page {
       width: 60%;
     }
- }
+ } */
 
 .form_page h1 {
   padding-bottom: 4px;
