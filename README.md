@@ -15,3 +15,10 @@ For login credentials please use
     Password: test
 
 This application will constantly be updated.
+
+Instructions for running locally:
+
+1. Clone or download this repo
+2. Use the command line to cd into the OutTrip folder.
+3. Run `node app.js` in the terminal ( it should return that the OurTrip server and DB are connected )
+4. Open your web browser to http://localhost:3000/ and begin searching!
