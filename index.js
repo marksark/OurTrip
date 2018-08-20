@@ -29,8 +29,6 @@ app.set('view engine', 'ejs');
 app.use(methodOverride("_method"));
 app.use(flash());
 
-//seed the data for DB while testing offline
-// seedDB();
 
 //Passport Configuration
 app.use(require("express-session")({
