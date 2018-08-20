@@ -9,13 +9,12 @@ const express               = require('express'),
       LocalStrategy         = require('passport-local'),
       passport              = require('passport'),
       passportLocalMongoose = require('passport-local-mongoose'),
-      // seedDB             = require("./seeds"),
       flash                 = require("connect-flash");
 
 //Requiring Routes
 const commentRoutes    = require("./routes/comments"),
-    campgroundRoutes = require("./routes/campgrounds"),
-    indexRoutes      = require("./routes/index");
+      campgroundRoutes = require("./routes/campgrounds"),
+      indexRoutes      = require("./routes/index");
 
 // mongoose.connect("mongodb://localhost/yelp_camp_v13");
 const databaseUri = "mongodb://mark:testing123@ds137246.mlab.com:37246/marksfirstdb";
@@ -56,6 +55,6 @@ app.use(indexRoutes);
 app.use("/campgrounds/:id/comments", commentRoutes);
 app.use("/campgrounds", campgroundRoutes);
 
-app.listen(process.env.PORT || 3000 , process.env.IP, function (){
+app.listen(process.env.PORT || 3000 , process.env.IP, () => {
   console.log("OurTrip Server has started");
 });
