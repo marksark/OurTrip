@@ -7,7 +7,7 @@ It can also be used to post photos in order to encourage friends to visit the na
 
 I am the sole developer of this project.
 
-A current live version can be found at OurTripByMarkSarkis.herokuapp.com
+The deployed version can be found [here](OurTripByMarkSarkis.herokuapp.com)
 
 For login credentials please use
 
@@ -16,7 +16,7 @@ For login credentials please use
 
 This application will constantly be updated.
 
-Instructions for running locally:
+##Instructions for running locally:
 
 1. Clone or download this repo
 2. Use the command line to cd into the OutTrip folder.
